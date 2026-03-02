@@ -8,7 +8,7 @@
 | UI | Tailwind CSS + shadcn/ui |
 | データベース | Supabase (PostgreSQL) |
 | 画像ストレージ | Supabase Storage |
-| ホスティング | ローカル / Vercel（予定） |
+| ホスティング | Vercel (https://manabi-check.vercel.app) |
 
 ---
 
@@ -77,7 +77,7 @@ manabi-check/
    ```
    npm run dev
    ```
-8. http://localhost:3000 にアクセス
+8. https://manabi-check.vercel.app にアクセス
 
 ---
 

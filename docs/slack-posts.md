@@ -15,16 +15,16 @@
 
 **お願いしたいこと**
 まずは管理画面を触ってみてください。
-→ http://localhost:3000/admin/units
+→ https://manabi-check.vercel.app/admin/units
 
 操作の流れ：単元登録 → 問題登録 → テスト作成 → 生徒登録
 
 サンプルデータとして「第1回 社会小テスト」が入っています。
-詳しい操作手順は添付のマニュアルを参照してください。
+**操作マニュアル**
+→ https://github.com/camelllllllllll/manabi-check/blob/main/docs/manual-teacher.md
 
 **注意**
 - まだプロトタイプ段階です。不具合やご要望があればこのスレッドに投稿お願いします
-- URLは社内ネットワークからのみアクセス可能です
 
 ---
 
@@ -40,9 +40,10 @@
 2. テストを選んで、紙テストを見ながら各問の○×をタップ
 3. 「採点する」を押すと、結果と復習教材が表示されます
 
-→ http://localhost:3000/parent/login
+→ https://manabi-check.vercel.app/parent/login
 
-詳しい操作手順は添付のご利用ガイドをご覧ください。
+**ご利用ガイド**
+→ https://github.com/camelllllllllll/manabi-check/blob/main/docs/manual-parent.md
 
 **お願い**
 - 現在は試験運用中です。ご不明な点は担当講師までお気軽にお問い合わせください
@@ -61,7 +62,10 @@
 - shadcn/ui
 
 **リポジトリ**
-→ （GitHubリポジトリURLをここに記載）
+→ https://github.com/camelllllllllll/manabi-check
+
+**本番URL**
+→ https://manabi-check.vercel.app
 
 **ドキュメント**
 - セットアップ手順・テーブル定義・環境変数：添付の保守マニュアルを参照
@@ -74,4 +78,47 @@
 - 画像ストレージはpublicバケット
 - PDF出力はブラウザ印刷機能を利用
 
-詳細は添付の保守管理マニュアルを確認してください。
+**保守管理マニュアル**
+→ https://github.com/camelllllllllll/manabi-check/blob/main/docs/manual-maintenance.md
+
+---
+
+## 4. デバッグ・フィードバック依頼投稿
+
+お疲れさまです。
+「まなびチェック」のプロトタイプを公開しました。本番前のデバッグにご協力ください。
+
+**URL**
+→ https://manabi-check.vercel.app
+
+**テスト用アカウント**
+アクセスコード：`ABC123`（テスト生徒：田中太郎）
+
+**確認してほしいこと**
+
+【講師画面】 https://manabi-check.vercel.app/admin/units
+- [ ] 単元の追加・編集・削除ができるか
+- [ ] 問題の登録・検索・編集ができるか
+- [ ] テストの作成（問題選択・配点設定・15点バリデーション）ができるか
+- [ ] 生徒の追加・アクセスコード発行ができるか
+
+【保護者画面】 https://manabi-check.vercel.app/parent/login
+- [ ] アクセスコード `ABC123` でログインできるか
+- [ ] テスト一覧が表示されるか
+- [ ] ○×入力がスムーズにできるか（スマホでも確認お願いします）
+- [ ] 採点結果が正しく表示されるか
+- [ ] 弱点単元がハイライトされるか
+- [ ] 復習教材が表示されるか
+- [ ] 印刷ボタンが機能するか
+
+**フィードバック方法**
+このスレッドに以下の形式で投稿をお願いします：
+```
+【画面名】（例：○×入力画面）
+【端末】（例：iPhone 15 / Chrome）
+【内容】不具合の内容 or 改善要望
+【スクショ】あれば添付
+```
+
+プロトタイプ段階なので、「ここ使いにくい」「こうしてほしい」も大歓迎です。
+よろしくお願いします！

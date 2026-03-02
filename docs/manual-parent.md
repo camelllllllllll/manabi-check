@@ -13,7 +13,7 @@
 
 1. スマートフォンのブラウザで以下のURLを開きます
 
-   http://localhost:3000/parent/login
+   https://manabi-check.vercel.app/parent/login
 
 2. 塾からお渡しした **アクセスコード**（英数字6桁）を入力します
 3. 「ログイン」をタップします

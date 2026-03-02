@@ -13,7 +13,7 @@
 
 ブラウザで以下を開いてください：
 
-http://localhost:3000/admin/units
+https://manabi-check.vercel.app/admin/units
 
 上部のタブで各管理画面を切り替えられます。
 
